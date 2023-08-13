@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from '../generalcomp/Section'
-import Project from '../generalcomp/project'
+import Project from '../generalcomp/Project'
 import SectionHead from '../generalcomp/SectionHead'
 import { Link } from 'react-router-dom'
 const Projects = (props) => {
