@@ -1,18 +1,11 @@
 import React from 'react'
 import Section from '../generalcomp/Section'
-import Lottie from 'react-lottie';
+
 import animationData from '../../lotties/Skb1oA2iyf.json';
 
 const Hero = ({ Coloumn, image }) => {
     // let list=Coloumn.social
-    const defaultOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: animationData,
-        // rendererSettings: {
-        //   preserveAspectRatio: "xMidYMid slice"
-        // }
-    };
+  
     return (
         <Section id='Hero'>
             <div className=' bg-[url(./line.svg)] dark:mix-blend-color-dodge mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 md:py-0 py-28 md:gap-12 md:px-8' >
@@ -20,11 +13,9 @@ const Hero = ({ Coloumn, image }) => {
 
                     <div className='hidden md:block w-2/5 flex items-center justify-center md:order-last md:flex-grow md:justify-end'>
 
-                        <Lottie
-                            options={defaultOptions}
-                        />
+                    
 
-                        {/* <lottie-player src="https://lottie.host/372379ed-34d3-4743-81f5-8e58897ca4ef/yfseGhxyuV.json" background="Transparent" speed="1" direction="1" mode="normal" loop autoplay></lottie-player> */}
+                        <lottie-player src="https://lottie.host/372379ed-34d3-4743-81f5-8e58897ca4ef/yfseGhxyuV.json" background="Transparent" speed="1" direction="1" mode="normal" loop autoplay></lottie-player>
 
                     </div>
                     <div className='flex max-w-3xl md:w-3/5 flex-grow flex-col justify-center gap-8 md:order-first md:items-start md:justify-center 2xl:gap-12'>
