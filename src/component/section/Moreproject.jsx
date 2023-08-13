@@ -1,9 +1,8 @@
 import React from 'react'
-import SectionHead from '../generalcomp/SectionHead'
 import { project } from '../../assets/data'
 import Project from '../generalcomp/project'
 
-const Hello = () => {
+const Moreproject = () => {
   return (
     <div className='flex  flex-col gap-4'>
      
@@ -18,4 +17,4 @@ const Hello = () => {
   )
 }
 
-export default Hello
+export default Moreproject

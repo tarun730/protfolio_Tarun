@@ -1,15 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-
 import './index.css'
 import ErrorPage from './component/generalcomp/Errorpage.jsx';
-// const Hello = React.lazy(() => import('./component/section/hello.jsx'));
-import Hello from './component/section/hello.jsx';
+import Moreproject from './component/section/Moreproject.jsx';
 import {
   createBrowserRouter,
   RouterProvider,
-  BrowserRouter
 } from "react-router-dom";
 const router = createBrowserRouter([
   {
@@ -19,7 +16,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/More-project",
-    element: <Hello/>,
+    element: <Moreproject/>,
     
   },
 
