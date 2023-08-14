@@ -18,7 +18,7 @@ export const header = {
             link: "#Contactme",
         }
     ],
-    "Resume_link":"./Tarun_Naik_CV"
+    "Resume_link":"./Tarun_Naik_CV.pdf"
 }
 export const hero = {
     "head": "Hero",
@@ -149,7 +149,7 @@ export const project = {
         }
         ,
         {
-            "image": "",
+            "image": "./pics/homePAGE.jpg",
             "name": "Personal Portfolio",
             "des": [
                 "Developed my Portfolio to Show case my ability and different projects in which i have worked on ",
@@ -157,8 +157,8 @@ export const project = {
                
             ],
             "tech_stack": ["ReactJS", "React-router","Taillwind"],
-            "Livelink": "link",
-            "Codelink": "code"
+            "Livelink": "https://tarunrajnaik.netlify.app",
+            "Codelink": "https://github.com/tarun730/protfolio_Tarun"
         },
         {
             "image": "https://screenshot-proxy.netlify.app/f_jpg,w_999/https://d33wubrfki0l68.cloudfront.net/6463d38c177a4d03dc99661c/screenshot_2023-05-16-19-04-01-0000.png",

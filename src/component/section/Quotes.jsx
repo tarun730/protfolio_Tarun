@@ -8,7 +8,7 @@ const Quotes = ({
     list
 }) => {
     const [cureent, setCurrent] = useState(0)
-    console.log(cureent)
+    // console.log(cureent)
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -21,14 +21,14 @@ const Quotes = ({
         }, 10000);
 
         return () => {
-            console.log('clean')
+            // console.log('clean')
             clearInterval(interval);
         };
     },);
 
 
     const changeSlide = (key) => {
-        console.log('j33')
+        // console.log('j33')
         switch (key) {
             case "prev":
                 console.log(key)
@@ -40,7 +40,7 @@ const Quotes = ({
                 }
                 break;
             case "next":
-                console.log(key)
+                // console.log(key)
                 if (cureent == list.length - 1) {
                     setCurrent((prev) => (list.length - 1) - prev)
 
