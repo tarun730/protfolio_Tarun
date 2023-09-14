@@ -83,6 +83,10 @@ export const skill = {
                 label: 'Git',
                 logo: "./tech_stack/git-svgrepo-com.svg"
             },
+            }, {
+                label: 'MUI',
+                logo: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fmui.com%2Fmaterial-ui%2Fdiscover-more%2Fshowcase%2F&psig=AOvVaw1CAafqvZCJkSjRuxseg-eD&ust=1694751690132000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNClt5agqYEDFQAAAAAdAAAAABAE"
+            },
         ]
 
 
@@ -220,5 +224,5 @@ export const contectme = {
     "description": "What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.",
     "gmail": "tarunrajnaik007@gmail.com",
     "number": "+91 6370062816",
-    "content": " 2023 | coded with ❤️️ by Tarun naik"
+    "content": "&#9400; 2023 | coded with ❤️️ by Tarun naik"
 }
