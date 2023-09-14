@@ -79,9 +79,14 @@ export const skill = {
             }, {
                 label: 'Figma',
                 logo: "./tech_stack/figma-svgrepo-com.svg"
-            }, {
+            },
+             {
                 label: 'Git',
                 logo: "./tech_stack/git-svgrepo-com.svg"
+            },
+             {
+                label: 'MUI',
+                logo: "./tech_stack/material-ui-svgrepo-com.svg"
             },
         ]
 
