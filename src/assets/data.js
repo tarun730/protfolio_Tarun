@@ -225,5 +225,5 @@ export const contectme = {
     "description": "What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.",
     "gmail": "tarunrajnaik007@gmail.com",
     "number": "+91 6370062816",
-    "content": " 2023 | coded with ❤️️ by Tarun naik"
+    "content": "&#9400; 2023 | coded with ❤️️ by Tarun naik"
 }
