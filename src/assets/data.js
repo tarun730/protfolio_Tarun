@@ -135,17 +135,19 @@ export const project = {
             "Codelink": "https://github.com/tarun730/movie-app"
         },
         {
-            "image": "https://screenshot-proxy.netlify.app/f_jpg,w_999/https://d33wubrfki0l68.cloudfront.net/64b28e32c6485402d93598eb/screenshot_2023-07-15-12-17-20-0000.png",
-            "name": "Mentor Hub",
+            "image": "https://screenshot-proxy.netlify.app/f_jpg,fit_cover,s_336x210/https://d33wubrfki0l68.cloudfront.net/651b0c303d35ad0008284b96/screenshot_2023-10-02-18-30-25-0000.png",
+            "name": "Ecommerce cart",
             "des": [
-                "Developed a landing page using ReactJS to provide details of the program  ",
+                "Developed a ecommerce webpapp using ReactJS ",
+                "Used conditional rendering , Add to cart and implemented features like sort by category,price etc..",
                 "The eye-catching design made it stand out" ,
             ],
-            "tech_stack": ["ReactJS", "React-router"],
-            "Livelink": "https://react-landing-page11.netlify.app/",
-            "Codelink": "https://github.com/tarun730/landing-page-react"
+            "tech_stack": ["ReactJS", "React-router", "tailwind"],
+            "Livelink": "https://ornate-pudding-4cb26e.netlify.app",
+            "Codelink": "https://github.com/tarun730/ecommerce_cart"
         }
         ,
+     
         {
             "image": "./pics/homePAGE.jpg",
             "name": "Personal Portfolio",
@@ -158,6 +160,18 @@ export const project = {
             "Livelink": "https://tarunrajnaik.netlify.app",
             "Codelink": "https://github.com/tarun730/protfolio_Tarun"
         },
+        {
+            "image": "https://screenshot-proxy.netlify.app/f_jpg,w_999/https://d33wubrfki0l68.cloudfront.net/64b28e32c6485402d93598eb/screenshot_2023-07-15-12-17-20-0000.png",
+            "name": "Mentor Hub",
+            "des": [
+                "Developed a landing page using ReactJS to provide details of the program  ",
+                "The eye-catching design made it stand out" ,
+            ],
+            "tech_stack": ["ReactJS", "React-router"],
+            "Livelink": "https://react-landing-page11.netlify.app/",
+            "Codelink": "https://github.com/tarun730/landing-page-react"
+        }
+        ,
         {
             "image": "https://screenshot-proxy.netlify.app/f_jpg,w_999/https://d33wubrfki0l68.cloudfront.net/6463d38c177a4d03dc99661c/screenshot_2023-05-16-19-04-01-0000.png",
             "name": "Blog Space",
