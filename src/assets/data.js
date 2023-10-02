@@ -94,36 +94,29 @@ export const skill = {
 }
 export const exprience = {
     "head": "Exprience",
-    "avilable": false,
+    "avilable": true,
     "explist": [
         {
-            "position": "  frontend developer",
-            "time_period": "2012-2023",
+            "position": " CropCrush - Frontend developer",
+            "time_period": "Dec 2021 - May 2022",
             "desciption": [
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis minima nobis consectetur ducimus accusamus et autem.",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis minima nobis consectetur ducimus accusamus et autem.",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis minima nobis consectetur ducimus accusamus et autem."
+                "Designed and implemented user interfaces for web applications.",
+                "Implement frontend components using HTML, CSS, and JavaScript to create interactive and user-friendly web interfaces.",
+                "Prioritize responsive design principles, ensuring that our web applications work seamlessly across various devices and screen sizes."
 
             ]
-        }, {
-            "position": "  frontend developer",
-            "time_period": "2012-2023",
+        },
+        {
+            "position": "TechnoBoot - Frontend developer",
+            "time_period": "Sep 2023 - Present",
             "desciption": [
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis minima nobis consectetur ducimus accusamus et autem.",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis minima nobis consectetur ducimus accusamus et autem.",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis minima nobis consectetur ducimus accusamus et autem."
+                // "Developing mobile applications with React-Native",
+                // "Implementing Material-UI",
+                // "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis minima nobis consectetur ducimus accusamus et autem."
 
             ]
-        }, {
-            "position": "  frontend developer",
-            "time_period": "2012-2023",
-            "desciption": [
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis minima nobis consectetur ducimus accusamus et autem.",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis minima nobis consectetur ducimus accusamus et autem.",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis minima nobis consectetur ducimus accusamus et autem."
-
-            ]
-        }
+        },
+       
     ]
 }
 export const project = {

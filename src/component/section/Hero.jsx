@@ -8,7 +8,7 @@ const Hero = ({ Coloumn, image }) => {
   
     return (
         <Section id='Hero'>
-            <div className=' bg-[url(./line.svg)] dark:mix-blend-color-dodge mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 md:py-0 py-28 md:gap-12 md:px-8' >
+            <div className='bg-[url(./pics/line.svg)] dark:mix-blend-color-dodge mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 md:py-0 py-28 md:gap-12 md:px-8' >
                 <div className='flex flex-col gap-1 md:flex-row'>
 
                     <div className='hidden md:block w-2/5 flex items-center justify-center md:order-last md:flex-grow md:justify-end'>

@@ -84,7 +84,7 @@ const Quotes = ({
                     <div className='text-6xl md:block hidden' onClick={() => changeSlide("next")} ><i className="fa-solid fa-arrow-right"></i></div>
                 </div>
             </div>
-            
+
         </Section>
     )
 }
