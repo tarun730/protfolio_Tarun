@@ -23,8 +23,16 @@ const Contectme = ({
                     <div className='flex items-center justify-center gap-1'>
                         <p className='text-normal text-sm flex items-center text-center'>{content}</p>
                     </div>
-                    </div>
+                </div>
             </div>
+
+
+
+
+          
+
+
+
         </Section>
     )
 }
