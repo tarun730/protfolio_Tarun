@@ -101,6 +101,7 @@ export const exprience = {
             "time_period": "Dec 2021 - May 2022",
             "desciption": [
                 "Designed and implemented user interfaces for web applications.",
+                "Designed and implemented user interfaces for web applications.",
                 "Implement frontend components using HTML, CSS, and JavaScript to create interactive and user-friendly web interfaces.",
                 "Prioritize responsive design principles, ensuring that our web applications work seamlessly across various devices and screen sizes."
 
@@ -108,11 +109,13 @@ export const exprience = {
         },
         {
             "position": "TechnoBoot - Frontend developer",
-            "time_period": "Sep 2023 - Present",
+            "time_period": "Sep 2023 - jan 2024",
             "desciption": [
-                // "Developing mobile applications with React-Native",
-                // "Implementing Material-UI",
-                // "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis minima nobis consectetur ducimus accusamus et autem."
+                " The Main Stack I worked with included: React.js, javascript, MUI,redux",
+                "Worked on different project like course selling webpage and blog posting and some internal products ",
+                "Developed mobile applications with React-Native",
+                "Implementing Material-UI for User friendly UI",
+               
 
             ]
         },
