@@ -62,17 +62,17 @@ export const skill = {
                 label: 'React',
                 logo: "./tech_stack/reactts-svgrepo-com.svg"
             },
-            //  {
-            //     label: 'Node.js',
-            //     logo: "./tech_stack/node-svgrepo-com.svg"
-            // }, {
-            //     label: 'Express.js',
-            //     logo: "./tech_stack/express-svgrepo-com.svg"
+             {
+                label: 'Node.js',
+                logo: "./tech_stack/node-svgrepo-com.svg"
+            }, {
+                label: 'Express.js',
+                logo: "./tech_stack/express-svgrepo-com.svg"
 
-            // }, {
-            //     label: 'MongoDB',
-            //     logo: "./tech_stack/mongo-svgrepo-com.svg"
-            // }, 
+            }, {
+                label: 'MongoDB',
+                logo: "./tech_stack/mongo-svgrepo-com.svg"
+            }, 
             {
                 label: 'Tailwindcss',
                 logo: "./tech_stack/tailwind-svgrepo-com.svg"
@@ -89,7 +89,7 @@ export const skill = {
                 logo: "./tech_stack/material-ui-svgrepo-com.svg"
             },
              {
-                label: 'POSTMAN',
+                label: 'Postman',
                 logo: "https://res.cloudinary.com/postman/image/upload/t_team_logo/v1629869194/team/2893aede23f01bfcbd2319326bc96a6ed0524eba759745ed6d73405a3a8b67a8"
             },
         ]
