@@ -27,8 +27,6 @@ const Header = () => {
     const handleThemeSwitch = () => {
         setTheme(() => Theme === "dark" ? "light" : "dark");
     };
-//    const nav= header.Navigation.map(i => i.label )
-//    console.log(nav)
     return (
         <div className="sticky dark:bg-[#1e293b] transition ease-in-out duration-300 dark:text-white top-0 z-30 w-full border-b border-transparent max-md:border-[#f9fafb] backdrop-blur-sm" >
             <div className=' mx-auto flex w-full max-w-7xl  justify-between p-4 md:px-8 items-start'>

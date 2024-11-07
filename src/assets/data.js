@@ -22,10 +22,11 @@ export const header = {
 }
 export const hero = {
     "head": "Hero",
+    "bgimg":"./pics/line.svg",
     "Coloumn": {
         "name": "Hi, I'm Tarun",
-        "description": "I'm a Frontend developer (React.js) with a focus on creating exceptional digital experiences that are fast, accessible, visually appealing, and responsive . I always love to learn something new.",
-        "location": "Odisha, India",
+        "description": "I'm Tarun Raj Naik, I am a Frontend Developer who enjoys coding with React.js, Tailwind, and MUI.",
+        "location": "Hyderabad, India",
         "social": [
             "https://github.com/tarun730", "https://twitter.com/TarunNaik67?s=09", "https://www.linkedin.com/in/tarun-naik-01656a1b4/", "mailto:tarunrajnaik007@gmail.com"
         ]
@@ -37,7 +38,7 @@ export const about = {
     "head": "About",
     "image": "./pics/2ndpic.jpg",
     "heading": "Curious about me? Here you have it:",
-    "desciption": [" I'm a passionate frontend developer (React.js) .", " A fresh MCA graduate of 2023, driven by a resolute desire to excel in the realm of frontend development. Armed with a solid foundation in web technologies, including HTML, CSS, JavaScript, and React,Throughout my educational tenure, I've honed my abilities by creating captivating web interfaces and interactive features, exemplifying my commitment to crafting seamless user experiences. ", " I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite 😉"]
+    "desciption": [" I'm a passionate frontend developer (React.js) .", "  ", " I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite 😉"]
 }
 
 export const skill = {
@@ -100,11 +101,11 @@ export const exprience = {
     "head": "Exprience",
     "avilable": true,
     "explist": [
+       
         {
             "position": " CropCrush - Frontend developer",
             "time_period": "Dec 2021 - May 2022",
             "desciption": [
-                "Designed and implemented user interfaces for web applications.",
                 "Designed and implemented user interfaces for web applications.",
                 "Implement frontend components using HTML, CSS, and JavaScript to create interactive and user-friendly web interfaces.",
                 "Prioritize responsive design principles, ensuring that our web applications work seamlessly across various devices and screen sizes."
@@ -122,6 +123,14 @@ export const exprience = {
                
 
             ]
+        },
+        {
+            "position": " Ayeim Technologies - Frontend developer",
+            "time_period": "Fab 2024 - Present",
+            "desciption": [
+                // "Working on OPENemr as ",
+             
+                  ]
         },
        
     ]
@@ -238,6 +247,5 @@ export const contectme = {
     "head": "Get in touch",
     "description": "What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.",
     "gmail": "tarunrajnaik007@gmail.com",
-    "number": "+91 6370062816",
-    "content": "&#9400; 2023 | coded with ❤️️ by Tarun naik"
+    "content": "2023 | coded with ❤️️ by Tarun Naik"
 }

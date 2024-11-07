@@ -20,11 +20,11 @@ function App() {
     
     <Header/>
  <Hero {...hero}/>
- <About {...about}/>
+ {/* <About {...about}/> */}
  <Skills {...skill}/>
- <Projects {...project}/>
 { exprience.avilable ? <Experience {...exprience}/> : null}
-<Quotes {...quotes} />
+ <Projects {...project}/>
+{/* <Quotes {...quotes} /> */}
 <Contectme {...contectme} />
     </>
     // </BrowserRouter> 

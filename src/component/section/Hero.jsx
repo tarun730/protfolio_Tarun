@@ -4,7 +4,7 @@ import Section from '../generalcomp/Section'
 import animationData from '../../lotties/Skb1oA2iyf.json';
 import { useState } from 'react';
 
-const Hero = ({ Coloumn, image }) => {
+const Hero = ({ Coloumn,bgimg, image }) => {
     // let list=Coloumn.social
     const [resultMessage, setResultMessage] = useState('');
     const [Modal, setModal] = useState(false);
@@ -52,10 +52,10 @@ const Hero = ({ Coloumn, image }) => {
             }, 5000);
         }
     };
-
     return (
         <Section id='Hero'>
-            <div className='bg-[url(./pics/line.svg)] dark:mix-blend-color-dodge mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 md:py-0 py-28 md:gap-12 md:px-8' >
+            <div   style={{
+        backgroundImage:  `url(${bgimg})`}} className=' dark:mix-blend-color-dodge mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 md:py-0 py-28 md:gap-12 md:px-8' >
                 <div className='flex flex-col gap-1 md:flex-row'>
 
                     <div className='hidden md:block w-2/5 flex items-center justify-center md:order-last md:flex-grow md:justify-end'>
