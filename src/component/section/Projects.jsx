@@ -3,15 +3,17 @@ import Section from '../generalcomp/Section'
 import Project from '../generalcomp/Project'
 import SectionHead from '../generalcomp/SectionHead'
 import { Link } from 'react-router-dom'
+import { Paragraph } from './Paragraph'
 const Projects = (props) => {
     let list = props.list
     // console.log(list)
     return (
         <Section id="Projects">
-            <div className='mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 md:gap-12 md:px-8'>
+            <div className='mx-auto flex w-full max-w-7xl flex-col px-4 md:px-8'>
+            
                 <SectionHead head={props.head} />
-                <h3 className='text-normal text-lg md:text-xl max-w-xl text-center self-center'> These are some of my projects</h3>
-                <div className='flex flex-col gap-4 ' >
+                <Paragraph className="mt-4"> These are some of my projects</Paragraph>
+                <div className='flex flex-col self-center' >
                     {
                         list.slice(0, 3).map((element, index) => <Project key={index} i={element} />)
                     }

@@ -3,8 +3,10 @@ import Section from '../generalcomp/Section'
 
 import animationData from '../../lotties/Skb1oA2iyf.json';
 import { useState } from 'react';
+import { TextGenerateEffect } from '../ui/text-generate-effect';
+import { IconMessage } from '@tabler/icons-react';
 
-const Hero = ({ Coloumn,bgimg, image }) => {
+const Hero = ({ Coloumn, bgimg, image }) => {
     // let list=Coloumn.social
     const [resultMessage, setResultMessage] = useState('');
     const [Modal, setModal] = useState(false);
@@ -54,19 +56,18 @@ const Hero = ({ Coloumn,bgimg, image }) => {
     };
     return (
         <Section id='Hero'>
-            <div   style={{
-        backgroundImage:  `url(${bgimg})`}} className=' dark:mix-blend-color-dodge mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 md:py-0 py-28 md:gap-12 md:px-8' >
+            <div style={{
+                backgroundImage: `url(${bgimg})`
+            }} className=' dark:mix-blend-color-dodge mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 md:py-0 py-10 md:gap-12 md:px-8' >
                 <div className='flex flex-col gap-1 md:flex-row'>
 
-                    <div className='hidden md:block w-2/5 flex items-center justify-center md:order-last md:flex-grow md:justify-end'>
-
-
-
+                    <div className='hidden md:flex w-2/5 items-center justify-center md:order-last md:flex-grow md:justify-end'>
                         <lottie-player src="https://lottie.host/372379ed-34d3-4743-81f5-8e58897ca4ef/yfseGhxyuV.json" background="Transparent" speed="1" direction="1" mode="normal" loop autoplay></lottie-player>
 
                     </div>
-                    <div className='flex max-w-3xl md:w-3/5 flex-grow flex-col justify-center gap-8 md:order-first md:items-start md:justify-center 2xl:gap-12'>
+                    <div className='flex max-w-3xl md:w-3/5 flex-grow flex-col justify-center gap-8 md:order-first md:items-start md:justify-center'>
                         <div className='flex flex-col gap-2'>
+
                             <h1 className='text-4xl flex items-center py-2 font-semibold md:font-bold md:text-5xl md:tracking-[-0.02em] lg:text-6xl lg:leading-[72px] text-gray-900'>{Coloumn.name}
                                 <span className='block w-[3em]'>
 
@@ -74,7 +75,7 @@ const Hero = ({ Coloumn,bgimg, image }) => {
 
                                 </span>
                             </h1>
-                            <p className='text-normal text-base'> {Coloumn.description} </p>
+                            <p className='text-normal text-base'><TextGenerateEffect words={Coloumn.description} /> </p>
                         </div>
                         <div className='flex flex-row gap-[1em] items-center'>
                             <span className="relative flex h-3 w-3">
@@ -92,56 +93,52 @@ const Hero = ({ Coloumn,bgimg, image }) => {
                             {/* <a target="_blank" href={Coloumn.social[3]}><i className="fa-regular fa-envelope"></i></a> */}
 
                         </div>
-                        {/* <a target="_blank" href={Coloumn.social[3]}> */}
-                        <button type="button"
+                        <a  target="_blank" href="https://wa.me/916370062816?text=I want to work on a project with you" class="mt-4 px-4 text-center w-max font-bold h-8 bg-green-400 dark:bg-green-400 text-gray-900 py-1 dark:text-gray-900 rounded" type="submit">Chat on WhatsApp</a>
+                        {/* <button type="button"
                             onClick={() => setModal(true)}
                             className='
                          w-[130px]  font-medium text-white cursor-pointer transition-all duration-[0.3s] ease-[ease] relative inline-block bg-sky-700 shadow-[inset_2px_2px_2px_0px_rgba(255,255,255,0.5),7px_7px_20px_0px_rgba(0,0,0,0.1),4px_4px_5px_0px_rgba(0,0,0,0.1)] px-[25px] py-2.5 rounded-[5px];
                          rounded-md
-                         text-black border-[none] after:absolute after:content-[""] after:w-0 after:h-full after:z-[-1] after:shadow-[-7px_-7px_20px_0px_#fff9,-4px_-4px_5px_0px_#fff9,7px_7px_20px_0px_#0002,4px_4px_5px_0px_#0001] after:transition-all after:duration-[0.3s] after:ease-[ease] after:left-0 after:top-0 hover:text-[#FFE656] hover:after:w-full hover:after:left-auto hover:after:right-0 active:top-0.5'
+                         border-[none] after:absolute after:content-[""] after:w-0 after:h-full after:z-[-1] after:shadow-[-7px_-7px_20px_0px_#fff9,-4px_-4px_5px_0px_#fff9,7px_7px_20px_0px_#0002,4px_4px_5px_0px_#0001] after:transition-all after:duration-[0.3s] after:ease-[ease] after:left-0 after:top-0 hover:text-[#FFE656] hover:after:w-full hover:after:left-auto hover:after:right-0 active:top-0.5'
 
                         >
                             Hire Me
-                        </button>
+                        </button> */}
+                        <div
+                            onClick={() => setModal(true)}
+                            className='fixed right-4 md:right-10 bottom-10 flex-col z-20 dark:text-slate-400 bg-gray-100 dark:bg-zinc-800 w-14 h-14 rounded-full flex items-center justify-center hover:scale-105 hover:shadow-xl transition duration-200 shadow-lg'>
+                            <IconMessage stroke={2} />
+
+                        </div>
                         {/* </a> */}
                     </div>
+                    <div style={{ display: Modal ? "" : "none" }} aria-hidden="true" className=" overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0  dark:bg-[#e4e4e4c2]  dark:z-50 z-50 justify-center items-center  md:inset-0 h-[calc(100%-1rem)] max-h-full bg-[#808080c2] dark:bg-[rgb(0 0 0 / 89%)]">
+                        <div className="flex items-center min-h-screen w-full max-h-full bg-gray-50 dark:bg-gray-900">
+                            <div className="container mx-auto">
 
-                    {/* <!-- Modal toggle --> */}
-                    {/* <button data-modal-target="default-modal" data-modal-toggle="default-modal" className="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
-                Toggle modal
-            </button> */}
+                                <div className="max-w-md mx-auto my-10 bg-white dark:bg-black p-3 rounded-md shadow-sm">
 
-                    {/* <!-- Main modal --> */}
-                 
-                        <div  style={{ display: Modal ? "" : "none" }} aria-hidden="true" className=" overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center  md:inset-0 h-[calc(100%-1rem)] max-h-full bg-[#808080c2] dark:bg-[rgb(0 0 0 / 89%)]">
+                                    <button onClick={() => setModal(false)} type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="static-modal">
+                                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                        </svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
 
-
-                            <div  className="flex items-center min-h-screen w-full max-h-full bg-gray-50 dark:bg-gray-900">
-                                <div className="container mx-auto">
-
-                                    <div className="max-w-md mx-auto my-10 bg-white dark:bg-black p-3 rounded-md shadow-sm">
-
-                                        <button onClick={() => setModal(false)} type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="static-modal">
-                                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                                            </svg>
-                                            <span class="sr-only">Close modal</span>
-                                        </button>
-
-                                        <div className="text-center">
+                                    <div className="text-center">
 
 
 
-                                            {/* <h1 className="my-1 text-3xl font-semibold text-gray-700 dark:text-gray-200">Contact Us</h1> */}
-                                            <p className="text-gray-400 dark:text-gray-400">Fill up the form below to send a message.</p>
-                                        </div>
-                                        <div className="m-7">
-                                            <form onSubmit={handleSubmit} id="form">
+                                        {/* <h1 className="my-1 text-3xl font-semibold text-gray-700 dark:text-gray-200">Contact Us</h1> */}
+                                        <p className="text-gray-400 dark:text-gray-400">Reach out to me over email or fill up this contact form. I will get back to you ASAP.</p>
+                                    </div>
+                                    <div className="m-7">
+                                        <form onSubmit={handleSubmit} id="form">
 
-                                                <input type="hidden" name="apikey" value="900259a2-decb-4e69-8c7d-d16327087055" />
-                                                <input type="hidden" name="subject" value={Subject} />
-                                                <input type="checkbox" name="botcheck" style={{ display: 'none' }} />
- <div className='flex flex-row gap-[1em]'>
+                                            <input type="hidden" name="apikey" value="900259a2-decb-4e69-8c7d-d16327087055" />
+                                            <input type="hidden" name="subject" value={Subject} />
+                                            <input type="checkbox" name="botcheck" style={{ display: 'none' }} />
+                                            <div className='flex flex-row gap-[1em]'>
                                                 <div className="mb-6">
                                                     <label htmlFor="name" className="block mb-2 text-sm text-gray-600 dark:text-gray-400">Full Name</label>
                                                     <input type="text" name="name" id="name" placeholder="John Doe" required className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
@@ -150,30 +147,30 @@ const Hero = ({ Coloumn,bgimg, image }) => {
                                                     <label htmlFor="email" className="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label>
                                                     <input type="email" name="email" id="email" placeholder="you@company.com" required className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
                                                 </div>
-                                               </div>
-                                                <div className="mb-6">
-                                                    <label htmlFor="Subject" className="block mb-2 text-sm text-gray-600 dark:text-gray-400">Subject</label>
-                                                    <input onChange={(e)=>setSubject(e.target.value)} type="text" name="Subject" id="Subject" placeholder="Subject" required className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
-                                                </div>
-                                                <div className="mb-6">
-                                                    <label htmlFor="message" className="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Message</label>
+                                            </div>
+                                            <div className="mb-6">
+                                                <label htmlFor="Subject" className="block mb-2 text-sm text-gray-600 dark:text-gray-400">Subject</label>
+                                                <input onChange={(e) => setSubject(e.target.value)} type="text" name="Subject" id="Subject" placeholder="Subject" required className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                                            </div>
+                                            <div className="mb-6">
+                                                <label htmlFor="message" className="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Message</label>
 
-                                                    <textarea rows="5" name="message" id="message" placeholder="Your Message" className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
-                                                </div>
-                                                {/* ... (Repeat htmlFor other form fields) */}
-                                                <div className="mb-6">
-                                                    <button type="submit" className="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">Send Message</button>
-                                                </div>
-                                                <p className={`text-base text-center ${resultMessage ? 'text-green-500' : 'text-gray-400'}`}>
-                                                    {resultMessage}
-                                                </p>
-                                            </form>
-                                        </div>
+                                                <textarea rows="5" name="message" id="message" placeholder="Your Message" className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
+                                            </div>
+                                            {/* ... (Repeat htmlFor other form fields) */}
+                                            <div className="mb-6">
+                                                <button type="submit" className="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">Send Message</button>
+                                            </div>
+                                            <p className={`text-base text-center ${resultMessage ? 'text-green-500' : 'text-gray-400'}`}>
+                                                {resultMessage}
+                                            </p>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    
+                    </div>
+
 
 
 

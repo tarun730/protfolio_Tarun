@@ -2,9 +2,9 @@ import React from 'react'
 import ExpList from '../generalcomp/ExpList'
 import Section from '../generalcomp/Section'
 import SectionHead from '../generalcomp/SectionHead'
-
-const Experience = ({ head,
-    explist }) => {
+import { exprience } from "../../assets/data";
+const { head, explist} =exprience
+const Experience = () => {
     return (
         <Section id="Experience">
             <div className=' mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 md:gap-12 md:px-8'>

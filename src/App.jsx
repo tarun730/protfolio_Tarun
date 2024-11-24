@@ -9,25 +9,31 @@ import Projects from './component/section/Projects'
 import Experience from './component/section/Experience'
 import Quotes from './component/section/Quotes'
 import Contectme from './component/section/Contectme'
-
+import { WorkHistory } from './component/section/WorkHistory'
+import { ContainerScroll } from './component/ui/container-scroll-animation'
+import { IconMessage } from '@tabler/icons-react';
 
 
 function App() {
  
   return (
-    // <BrowserRouter>
-    <>
     
+  
+    <>
+     
     <Header/>
- <Hero {...hero}/>
- {/* <About {...about}/> */}
- <Skills {...skill}/>
-{ exprience.avilable ? <Experience {...exprience}/> : null}
+     <Hero {...hero}/>
+ <About {...about}/>
+      <Skills {...skill}/>
+      <WorkHistory />
+     
  <Projects {...project}/>
+
+
 {/* <Quotes {...quotes} /> */}
 <Contectme {...contectme} />
     </>
-    // </BrowserRouter> 
+    
   )
 }
 

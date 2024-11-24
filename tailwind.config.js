@@ -4,6 +4,10 @@ module.exports = {
   content: ["./src/**/*.{html,jsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        doto: ['Doto', 'serif'],
+        montserrat: ['Montserrat', 'sans-serif'], // adding custom font "Doto"
+      },
       colors: {
         gray: {
           DEFAULT: 'rgb(var(--app-gray-default) / <alpha-value>)',
@@ -53,7 +57,13 @@ module.exports = {
     },
   },
   plugins: [
-  
+    function ({ addUtilities }) {
+      addUtilities({
+        '.font-variation-settings-rond': {
+          'font-variation-settings': '"ROND" 0',
+        },
+      });
+    },
 ]
 
 };

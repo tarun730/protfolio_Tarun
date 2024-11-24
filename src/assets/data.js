@@ -1,10 +1,11 @@
 export const header = {
     "logo": "TN",
     "Navigation": [
-        {
-            label: "About",
-            link: "#About",
-        },  {
+        // {
+        //     label: "About",
+        //     link: "#About",
+        // }, 
+         {
             label: "Skills",
             link: "#Skills",
         },
@@ -25,7 +26,7 @@ export const hero = {
     "bgimg":"./pics/line.svg",
     "Coloumn": {
         "name": "Hi, I'm Tarun",
-        "description": "I'm Tarun Raj Naik, I am a Frontend Developer who enjoys coding with React.js, Tailwind, and MUI.",
+        "description": "I am a Frontend Developer who enjoys coding with React.js, Tailwind, and MUI. love building clean and easy-to-use webapps .",
         "location": "Hyderabad, India",
         "social": [
             "https://github.com/tarun730", "https://twitter.com/TarunNaik67?s=09", "https://www.linkedin.com/in/tarun-naik-01656a1b4/", "mailto:tarunrajnaik007@gmail.com"
@@ -38,11 +39,13 @@ export const about = {
     "head": "About",
     "image": "./pics/2ndpic.jpg",
     "heading": "Curious about me? Here you have it:",
-    "desciption": [" I'm a passionate frontend developer (React.js) .", "  ", " I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite 😉"]
+    "desciption": [" Hey there, I'm Tarun raj naik - a passionate developer and a connoisseur of awesome design. Welcome to my corner of the digital world!", 
+    " I mainly work with React, but I’m always exploring new tools to expand my skill set and contribute to meaningful, impactful work. When I’m not coding, you’ll probably find me gaming, traveling, or hanging out with friends. Always looking for new ways to grow and learn!  ", 
+    " I'm available for freelance work, so feel free to reach out and say hello! 😉"]
 }
 
 export const skill = {
-    "head": "Skill",
+    "head": "Tech Stack",
     "heading": "The skills, tools and technologies I know :",
     "skills":
         [
@@ -59,9 +62,14 @@ export const skill = {
             {
                 label: 'Javascript',
                 logo: "./tech_stack/javascript-svgrepo-com.svg"
-            }, {
-                label: 'React',
+            }, 
+            {
+                label: 'ReactJS',
                 logo: "./tech_stack/reactts-svgrepo-com.svg"
+            },
+            {
+                label: 'React-router',
+                logo: "./tech_stack/react-router-svgrepo-com.svg"
             },
              {
                 label: 'Node.js',
@@ -75,7 +83,7 @@ export const skill = {
                 logo: "./tech_stack/mongo-svgrepo-com.svg"
             }, 
             {
-                label: 'Tailwindcss',
+                label: 'TailwindCSS',
                 logo: "./tech_stack/tailwind-svgrepo-com.svg"
             }, {
                 label: 'Figma',
@@ -96,6 +104,129 @@ export const skill = {
         ]
 
 
+}
+export const project = {
+    "head": "Projects",
+    "list": [
+        // {
+        //     "image": "https://screenshot-proxy.netlify.app/f_jpg,w_999/https://d33wubrfki0l68.cloudfront.net/642344d461914a182e4fe5e8/screenshot_2023-03-28-19-50-56-0000.png",
+        //     "name": "Movie searching app",
+        //     "des": [
+        //         "Developed a Movie searching application using ReactJS and React-Router to provide a user-friendly interface for movie searching ",
+        //         "Fetched API to render the movies dynamically and provided smooth navigation between different movie categories " ,
+        //         "Implemented responsive design to ensure optimal viewing on different devices"
+        //     ],
+        //     "tech_stack": ["ReactJS", "React-router", "CSS"],
+        //     "Livelink": "https://movie-searching-app02.netlify.app/",
+        //     "Codelink": "https://github.com/tarun730/movie-app"
+        // },
+        {
+            "image": "./pics/Screenshot 2024-11-24 191240.jpg",
+            "name": "examys",
+            "des": [
+                "Developed a ecommerce webpapp using ReactJS ",
+                "Used conditional rendering , Add to cart and implemented features like sort by category,price etc..",
+                "The eye-catching design made it stand out" ,
+            ],
+            tech_stack: ["ReactJS", "React-router", "CSS","MongoDB","MUI","Node.js"],
+            "Livelink": "https://examys.com/",
+            "Codelink": "#"
+        },
+        {
+            "image": "https://screenshot-proxy.netlify.app/f_jpg,fit_cover,s_336x210/https://d33wubrfki0l68.cloudfront.net/651b0c303d35ad0008284b96/screenshot_2023-10-02-18-30-25-0000.png",
+            "name": "Ecommerce cart",
+            "des": [
+                "Developed a ecommerce webpapp using ReactJS ",
+                "Used conditional rendering , Add to cart and implemented features like sort by category,price etc..",
+                "The eye-catching design made it stand out" ,
+            ],
+            tech_stack: ["ReactJS", "React-router", "TailwindCSS"],
+            "Livelink": "https://ornate-pudding-4cb26e.netlify.app",
+            "Codelink": "https://github.com/tarun730/ecommerce_cart"
+        }
+        ,
+     
+        {
+            "image": "./pics/homePAGE.jpg",
+            "name": "Personal Portfolio",
+            "des": [
+                "Developed my Portfolio to Show case my ability and different projects in which i have worked on ",
+                "Created using react,taillwind and it is also mobile responsive " ,
+               
+            ],
+            tech_stack: ["ReactJS", "React-router","TailwindCSS"],
+            "Livelink": "https://tarunrajnaik.netlify.app",
+            "Codelink": "https://github.com/tarun730/protfolio_Tarun"
+        },
+        {
+            "image": "https://screenshot-proxy.netlify.app/f_jpg,w_999/https://d33wubrfki0l68.cloudfront.net/64b28e32c6485402d93598eb/screenshot_2023-07-15-12-17-20-0000.png",
+            "name": "Mentor Hub",
+            "des": [
+                "Developed a landing page using ReactJS to provide details of the program  ",
+                "The eye-catching design made it stand out" ,
+            ],
+            "tech_stack": ["ReactJS", "React-router"],
+            "Livelink": "https://react-landing-page11.netlify.app/",
+            "Codelink": "https://github.com/tarun730/landing-page-react"
+        }
+        ,
+        {
+            "image": "https://screenshot-proxy.netlify.app/f_jpg,w_999/https://d33wubrfki0l68.cloudfront.net/6463d38c177a4d03dc99661c/screenshot_2023-05-16-19-04-01-0000.png",
+            "name": "Blog Space",
+            "des": [
+                "Developed a blog post app that can fetch blogs and post new blogs",
+                "this project help me to understand API fetching and DOM manipulation" ,
+               
+            ],
+            tech_stack: ["HTML", "CSS","Javascript"],
+            "Livelink": "https://vocal-chaja-b2feb6.netlify.app/",
+            "Codelink": "https://github.com/tarun730/blog-space"
+        },
+
+    ]
+}
+export const timeline = {
+    "head": "Work History",
+    "avilable": true,
+    "explist": [
+       
+        {
+            company: "Ayeim Technology",
+            title: "Software Engineer",
+            date: "Fab 2024 - Present",
+            description: "Developing a comprehensive solution for medical practice management.",
+            responsibilities: [
+                "Built features to enhance the overall user experience in medical management",
+                "Developed tools to streamline patient and practice management",
+                "Improved system usability for better functionality and efficiency",
+           
+              ]
+          },
+          {
+            company: "TechnoBoot",
+            title: "Frontend Developer",
+            date: "Sep 2023 - Jan 2024",
+            description: "Worked on web and mobile projects using modern frontend technologies.",
+            responsibilities: [
+              "Worked with React.js, JavaScript, MUI, and Redux on various projects.",
+              "Developed a course-selling webpage, a blog posting feature, and internal products.",
+              "Built mobile applications with React Native.",
+              "Implemented Material-UI to create user-friendly interfaces."
+            ]
+          },
+          {
+            company: "CropCrush",
+            title: "Frontend Developer",
+            date: "Dec 2021 - May 2022",
+            description: "Designed and developed responsive website.",
+            responsibilities: [
+              "Designed and implemented user interfaces for web applications.",
+              "Created frontend components using HTML, CSS, and JavaScript to build interactive, user-friendly web interfaces.",
+              "Prioritized responsive design principles to ensure seamless functionality across various devices and screen sizes."
+            ]
+          },
+       
+    ]
 }
 export const exprience = {
     "head": "Exprience",
@@ -135,74 +266,7 @@ export const exprience = {
        
     ]
 }
-export const project = {
-    "head": "Projects",
-    "list": [
-        // {
-        //     "image": "https://screenshot-proxy.netlify.app/f_jpg,w_999/https://d33wubrfki0l68.cloudfront.net/642344d461914a182e4fe5e8/screenshot_2023-03-28-19-50-56-0000.png",
-        //     "name": "Movie searching app",
-        //     "des": [
-        //         "Developed a Movie searching application using ReactJS and React-Router to provide a user-friendly interface for movie searching ",
-        //         "Fetched API to render the movies dynamically and provided smooth navigation between different movie categories " ,
-        //         "Implemented responsive design to ensure optimal viewing on different devices"
-        //     ],
-        //     "tech_stack": ["ReactJS", "React-router", "CSS"],
-        //     "Livelink": "https://movie-searching-app02.netlify.app/",
-        //     "Codelink": "https://github.com/tarun730/movie-app"
-        // },
-        {
-            "image": "https://screenshot-proxy.netlify.app/f_jpg,fit_cover,s_336x210/https://d33wubrfki0l68.cloudfront.net/651b0c303d35ad0008284b96/screenshot_2023-10-02-18-30-25-0000.png",
-            "name": "Ecommerce cart",
-            "des": [
-                "Developed a ecommerce webpapp using ReactJS ",
-                "Used conditional rendering , Add to cart and implemented features like sort by category,price etc..",
-                "The eye-catching design made it stand out" ,
-            ],
-            "tech_stack": ["ReactJS", "React-router", "tailwind"],
-            "Livelink": "https://ornate-pudding-4cb26e.netlify.app",
-            "Codelink": "https://github.com/tarun730/ecommerce_cart"
-        }
-        ,
-     
-        {
-            "image": "./pics/homePAGE.jpg",
-            "name": "Personal Portfolio",
-            "des": [
-                "Developed my Portfolio to Show case my ability and different projects in which i have worked on ",
-                "Created using react,taillwind and it is also mobile responsive " ,
-               
-            ],
-            "tech_stack": ["ReactJS", "React-router","Taillwind"],
-            "Livelink": "https://tarunrajnaik.netlify.app",
-            "Codelink": "https://github.com/tarun730/protfolio_Tarun"
-        },
-        {
-            "image": "https://screenshot-proxy.netlify.app/f_jpg,w_999/https://d33wubrfki0l68.cloudfront.net/64b28e32c6485402d93598eb/screenshot_2023-07-15-12-17-20-0000.png",
-            "name": "Mentor Hub",
-            "des": [
-                "Developed a landing page using ReactJS to provide details of the program  ",
-                "The eye-catching design made it stand out" ,
-            ],
-            "tech_stack": ["ReactJS", "React-router"],
-            "Livelink": "https://react-landing-page11.netlify.app/",
-            "Codelink": "https://github.com/tarun730/landing-page-react"
-        }
-        ,
-        {
-            "image": "https://screenshot-proxy.netlify.app/f_jpg,w_999/https://d33wubrfki0l68.cloudfront.net/6463d38c177a4d03dc99661c/screenshot_2023-05-16-19-04-01-0000.png",
-            "name": "Blog Space",
-            "des": [
-                "Developed a blog post app that can fetch blogs and post new blogs",
-                "this project help me to understand API fetching and DOM manipulation" ,
-               
-            ],
-            "tech_stack": ["HTML", "CSS","Javascript"],
-            "Livelink": "https://vocal-chaja-b2feb6.netlify.app/",
-            "Codelink": "https://github.com/tarun730/blog-space"
-        },
 
-    ]
-}
 export const quotes = {
     "head": "Quotes",
     "heading": "Nice things people have said",
