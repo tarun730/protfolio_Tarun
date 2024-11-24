@@ -15,6 +15,7 @@ const Project = (props) => {
     <div>
       <div className=" dark:text-slate-50  border-stone-300 dark:my-2 my-3 md:col-span-2 row-span-1 rounded-xl dark:hover:bg-[#2b3c57] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-[#1e293b] dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4">
         {/* {products.map((product, idx) => ( */}
+        
         <motion.div
           // key={product.href}
           initial={{
@@ -27,7 +28,7 @@ const Project = (props) => {
           }}
           transition={{ duration: 0.2, delay: 1 * 0.1 }}
         >
-          <Link
+          <div
             //   href={product.slug ? `/projects/${product.slug}` : product.href}
             //   key={product.href}
             className="group flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 dark:hover:bg-[#2b3c5700] hover:bg-[#e7e7e7c2] rounded-2xl transition duration-200 p-3"
@@ -40,17 +41,24 @@ const Project = (props) => {
               className="rounded-md shadow-md"
             />
             <div className="flex flex-col justify-between">
-              <div>
+              <div className="flex flex-row justify-between ">
                 <Heading
                   as="h4"
                   className="font-black text-lg md:text-lg lg:text-lg "
                 >
                   {name}
                 </Heading>
+                <div className='flex flex-row gap-4'>
+           {
+               Codelink=="#" ? null: <a href={Codelink} target='_blank' className='self-start rounded-lg p-1.5 hover:bg-gray-50 [&_svg]:stroke-gray-500'><i className="fa-solid fa-code"></i></a>
+ }
+          <a href={Livelink} target='_blank' className='self-start rounded-lg p-1.5 hover:bg-gray-50 [&_svg]:stroke-gray-500'><i className="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+                       </div>
                 <Paragraph className="text-sm md:text-sm lg:text-sm mt-2 max-w-xl">
                   {des}
                 </Paragraph>
-              </div>
+       
               <div className="flex space-x-2 md:mb-1 mt-4 md:mt-2">
 
                 {
@@ -75,8 +83,10 @@ const Project = (props) => {
                     </>
                   ))} */}
               </div>
+              
             </div>
-          </Link>
+            
+          </div>
         </motion.div>
         {/* ))} */}
       </div>
