@@ -124,10 +124,11 @@ export const project = {
             "image": "./pics/Screenshot 2024-11-24 191240.jpg",
             "name": "examys",
             "des": [
-                "Developed a ecommerce webpapp using ReactJS ",
-                "Used conditional rendering , Add to cart and implemented features like sort by category,price etc..",
-                "The eye-catching design made it stand out" ,
-            ],
+                "Developed a learning web app using ReactJS while working with the team at TechnoBoot.",
+                "Implemented Redux for state management .",
+                "Created reusable components for improved maintainability.",
+              ],
+              
             tech_stack: ["ReactJS", "React-router", "CSS","MongoDB","MUI","Node.js"],
             "Livelink": "https://examys.com/",
             "Codelink": "#"
