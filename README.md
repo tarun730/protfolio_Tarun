@@ -175,20 +175,20 @@
 <div align="center">
   
 <a href="mailto:tarunrajnaik@gmail.com" target="_blank">
-<img src="[./gmail.png](https://s.magecdn.com/social/tc-mail.svg)" width=50 height=50 alt="tarunrajnaik@gmail.com" style="margin-bottom: 5px;" />
+<img src="https://s.magecdn.com/social/tc-mail.svg" width=50 height=50 alt="tarunrajnaik@gmail.com" style="margin-bottom: 5px;" />
 </a>
 
 <a href="https://x.com/TarunNaik67" target="_blank">
-<img src="[./twitter.png](https://s.magecdn.com/social/tc-x.svg)" width=50 height=50 alt="TarunNaik67" style="margin-bottom: 5px;" />
+<img src="https://s.magecdn.com/social/tc-x.svg" width=50 height=50 alt="TarunNaik67" style="margin-bottom: 5px;" />
 </a>
 
 
 <a href="https://www.githubcom/tarun730" target="_blank">
-<img src="[./github.png](https://s.magecdn.com/social/tc-github.svg)" width=50 height=50 alt="tarun730" style="margin-bottom: 5px;" />
+<img src="https://s.magecdn.com/social/tc-github.svg" width=50 height=50 alt="tarun730" style="margin-bottom: 5px;" />
 </a>
 
 <a href="https://www.linkedin.com/in/tarun-naik-01656a1b4/" target="_blank">
-<img src="[./linkedin.png](https://s.magecdn.com/social/tc-linkedin.svg)" width=50 height=50 alt="linkedin" style="margin-bottom: 5px;" />
+<img src="https://s.magecdn.com/social/tc-linkedin.svg" width=50 height=50 alt="linkedin" style="margin-bottom: 5px;" />
 </a>
 
 </div>
