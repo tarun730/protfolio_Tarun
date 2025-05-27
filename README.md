@@ -1,5 +1,5 @@
 <!--Banner-->
-![Tarun's Banner Image](./banner.png)
+![Tarun's Banner Image](https://media.licdn.com/dms/image/v2/D5616AQHFC7aeBQFgvg/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1719748099676?e=1753920000&v=beta&t=oT4zEPb5NS0MFyiy1b00apiN85Xh21xnTSS2yN6PpI8)
 
 <!--Night Owl image-->
 <div>
