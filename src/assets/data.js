@@ -108,18 +108,18 @@ export const skill = {
 export const project = {
     "head": "Projects",
     "list": [
-        // {
-        //     "image": "https://screenshot-proxy.netlify.app/f_jpg,w_999/https://d33wubrfki0l68.cloudfront.net/642344d461914a182e4fe5e8/screenshot_2023-03-28-19-50-56-0000.png",
-        //     "name": "Movie searching app",
-        //     "des": [
-        //         "Developed a Movie searching application using ReactJS and React-Router to provide a user-friendly interface for movie searching ",
-        //         "Fetched API to render the movies dynamically and provided smooth navigation between different movie categories " ,
-        //         "Implemented responsive design to ensure optimal viewing on different devices"
-        //     ],
-        //     "tech_stack": ["ReactJS", "React-router", "CSS"],
-        //     "Livelink": "https://movie-searching-app02.netlify.app/",
-        //     "Codelink": "https://github.com/tarun730/movie-app"
-        // },
+        {
+            "image": "https://screenshot-proxy.netlify.app/f_jpg,w_999/https://d33wubrfki0l68.cloudfront.net/642344d461914a182e4fe5e8/screenshot_2023-03-28-19-50-56-0000.png",
+            "name": "Movie searching app",
+            "des": [
+                "Developed a Movie searching application using ReactJS and React-Router to provide a user-friendly interface for movie searching ",
+                "Fetched API to render the movies dynamically and provided smooth navigation between different movie categories " ,
+                "Implemented responsive design to ensure optimal viewing on different devices"
+            ],
+            "tech_stack": ["ReactJS", "React-router", "CSS"],
+            "Livelink": "https://movie-searching-app02.netlify.app/",
+            "Codelink": "https://github.com/tarun730/movie-app"
+        },
         {
             "image": "./pics/Screenshot 2024-11-24 191240.jpg",
             "name": "examys",
