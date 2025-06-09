@@ -93,7 +93,9 @@ const Hero = ({ Coloumn, bgimg, image }) => {
                             {/* <a target="_blank" href={Coloumn.social[3]}><i className="fa-regular fa-envelope"></i></a> */}
 
                         </div>
-                        <a  target="_blank" href="https://wa.me/916370062816?text=I want to work on a project with you" class="mt-4 px-4 text-center w-max font-bold h-8 bg-green-400 dark:bg-green-400 text-gray-900 py-1 dark:text-gray-900 rounded" type="submit">Chat on WhatsApp</a>
+                        <a  target="_blank"
+                         href="mailto:tarunrajnaik007@gmail.com?subject=Let's%20Work%20Together&body=I%20want%20to%20work%20on%20a%20project%20with%20you"
+                         class="mt-4 px-4 text-center w-max font-bold h-8 bg-green-400 dark:bg-green-400 text-gray-900 py-1 dark:text-gray-900 rounded" type="submit">Email Me</a>
                         {/* <button type="button"
                             onClick={() => setModal(true)}
                             className='
