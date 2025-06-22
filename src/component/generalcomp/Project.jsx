@@ -6,6 +6,7 @@ import { Paragraph } from "../section/Paragraph";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { skill } from "../../assets/data";
+import { IconCircleCheckFilled } from "@tabler/icons-react";
 
 const Project = (props) => {
   // console.log(props)
@@ -15,7 +16,7 @@ const Project = (props) => {
     <div>
       <div className=" dark:text-slate-50  border-stone-300 dark:my-2 my-3 md:col-span-2 row-span-1 rounded-xl dark:hover:bg-[#2b3c57] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-[#1e293b] dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4">
         {/* {products.map((product, idx) => ( */}
-        
+
         <motion.div
           // key={product.href}
           initial={{
@@ -31,14 +32,14 @@ const Project = (props) => {
           <div
             //   href={product.slug ? `/projects/${product.slug}` : product.href}
             //   key={product.href}
-            className="group flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 dark:hover:bg-[#2b3c5700] hover:bg-[#e7e7e7c2] rounded-2xl transition duration-200 p-3"
+            className="group flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-4 dark:hover:bg-[#2b3c5700] hover:bg-[#e7e7e7c2] rounded-2xl transition duration-200 p-3"
           >
             <img
               src={image}
               alt="thumbnail"
               height="200"
               width="200"
-              className="rounded-md shadow-md"
+              className="rounded-md shadow-md object-contain"
             />
             <div className="flex flex-col justify-between">
               <div className="flex flex-row justify-between ">
@@ -49,22 +50,29 @@ const Project = (props) => {
                   {name}
                 </Heading>
                 <div className='flex flex-row gap-4'>
-           {
-               Codelink=="#" ? null: <a href={Codelink} target='_blank' className='self-start rounded-lg p-1.5 hover:bg-gray-50 [&_svg]:stroke-gray-500'><i className="fa-solid fa-code"></i></a>
- }
-          <a href={Livelink} target='_blank' className='self-start rounded-lg p-1.5 hover:bg-gray-50 [&_svg]:stroke-gray-500'><i className="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-                       </div>
-                <Paragraph className="text-sm md:text-sm lg:text-sm mt-2 max-w-xl">
-                  {des}
-                </Paragraph>
-       
+                  {
+                    Codelink == "#" ? null : <a href={Codelink} target='_blank' className='self-start rounded-lg p-1.5 hover:bg-gray-50 [&_svg]:stroke-gray-500'><i className="fa-solid fa-code"></i></a>
+                  }
+                  <a href={Livelink} target='_blank' className='self-start rounded-lg p-1.5 hover:bg-gray-50 [&_svg]:stroke-gray-500'><i className="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <Paragraph className="text-sm md:text-sm lg:text-sm mt-2 max-w-xl">
+              {
+            des.map((i, index) =>(
+              <div className="grid grid-cols-[0.05fr_1fr] my-1">
+                 <IconCircleCheckFilled className="w-4 h-3 mt-1 text-neutral-600 dark:text-slate-200" />
+              <p key={index} className='text-normal  text-base'>    {i} </p>
+              </div>)
+            )
+          }
+              </Paragraph>
+
               <div className="flex space-x-2 md:mb-1 mt-4 md:mt-2">
 
                 {
 
                   skill.skills.map(i => (
-                    tech_stack.map(iof => (iof == i.label ? <img height="30" width="30" loading='lazy' src={i.logo} alt="SkillLogo" srcSet="" /> : null))
+                    tech_stack.map(iof => (iof == i.label ? <img height="30" width="30" loading='lazy' key={i.label} src={i.logo} alt="SkillLogo" srcSet="" /> : null))
                   ))
 
                 }
@@ -83,9 +91,9 @@ const Project = (props) => {
                     </>
                   ))} */}
               </div>
-              
+
             </div>
-            
+
           </div>
         </motion.div>
         {/* ))} */}
@@ -104,7 +112,10 @@ const Project = (props) => {
         <h2 className='text-lg md:text-xl font-semibold text-gray-900'>{name}</h2>
         <div className='flex flex-col gap-4' >
           {
-            des.map((i, index) => <p key={index} className='text-normal  text-base'> {i} </p>)
+            des.map((i, index) => <>
+              <p key={index} className='text-normal  text-base'>   {i} </p>
+            </>
+            )
           }
         </div>
 

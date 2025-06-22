@@ -98,6 +98,10 @@ export const skill = {
                 logo: "./tech_stack/material-ui-svgrepo-com.svg"
             },
              {
+                label: 'shadcn',
+                logo: "./tech_stack/chad-cn--svgrepo-com.svg"
+            },
+             {
                 label: 'Postman',
                 logo: "https://res.cloudinary.com/postman/image/upload/t_team_logo/v1629869194/team/2893aede23f01bfcbd2319326bc96a6ed0524eba759745ed6d73405a3a8b67a8"
             },
@@ -109,16 +113,30 @@ export const project = {
     "head": "Projects",
     "list": [
         {
-            "image": "https://screenshot-proxy.netlify.app/f_jpg,w_999/https://d33wubrfki0l68.cloudfront.net/642344d461914a182e4fe5e8/screenshot_2023-03-28-19-50-56-0000.png",
+            "image": "https://app.netlify.com/.netlify/images?url=https://d33wubrfki0l68.cloudfront.net/684703a75e5f5500a546dd1f/screenshot_2025-06-09-15-54-47-0000.webp",
             "name": "Movie searching app",
             "des": [
                 "Developed a Movie searching application using ReactJS and React-Router to provide a user-friendly interface for movie searching ",
                 "Fetched API to render the movies dynamically and provided smooth navigation between different movie categories " ,
                 "Implemented responsive design to ensure optimal viewing on different devices"
             ],
-            "tech_stack": ["ReactJS", "React-router", "CSS"],
+            "tech_stack": ["ReactJS", "React-router", "CSS","shadcn"],
             "Livelink": "https://movie-searching-app02.netlify.app/",
             "Codelink": "https://github.com/tarun730/movie-app"
+        },
+        {
+            "image": "./pics/Screenshot 2025-06-22 154607.png",
+            "name": "designdeclaresso",
+            "des": [
+                "Clone of the official Design Declares website built for learning and portfolio purposes.",
+                "Landing page for developers, designers, and agencies focused on climate-conscious design.",
+                "Implemented responsive design to ensure optimal viewing across various devices.",
+                "Replicated the layout and structure, including manifesto, case studies, and call-to-action sections.",
+                "Focused on pixel-perfect UI and clean component structure using React."
+              ],
+            "tech_stack": ["ReactJS", "React-router", "CSS"],
+            "Livelink": "https://designdeclaresso.netlify.app/",
+            "Codelink": "https://github.com/tarun730/designdeclaress.o.git"
         },
         {
             "image": "./pics/Screenshot 2024-11-24 191240.jpg",

@@ -45,11 +45,12 @@ const Header = () => {
                         <button className="inline-flex items-center justify-center rounded-xl bg-gray-900 px-4 py-1.5 font-medium text-gray-50 transition-colors duration-200 hover:bg-[#d4d4d8] dark:bg-[#475569]  "  > <a href={header.Resume_link} download>Download CV</a>  </button>
                     </div>
                 </div>
+                <button onClick={handleThemeSwitch} className="relative flex justify-center items-center hover:bg-gray-100 active:bg-gray-200 rounded-lg p-1.5 transition-colors duration-200 [&amp;_svg]:stroke-gray-600 [&amp;_svg]:hover:stroke-gray-700 [&amp;_svg]:w-6 [&amp;_svg]:h-6"> {Theme === 'dark' ? <i className="fa-solid fa-sun"></i> : <i className="fa-solid fa-moon"></i>} </button>
 
-                <div className=' md:hidden flex flex-row-reverse items-start gap-6  ' >
+                <div className=' hidden  md:hidden flex-row-reverse items-start gap-6  ' >
                     <button className='text-4xl ' onClick={() => setOpen((prev) => !prev)}>{open ? <i className="fa-regular fa-circle-xmark"></i> : <i className="fa-solid fa-bars"></i>} </button>
 
-                    <div className={` ${open ? `flex` : `hidden`} rounded-3xl absolute z-[-1] drop-shadow-xl bg-[aliceblue] dark:bg-[#1e293b] dark:text-white p-[3em] items-center gap-6  flex-col `}>
+                    <div className={` ${ open ? `p-[3em] ` : `h-0 overflow-hidden`} flex transition duration-300 delay-150 rounded-3xl absolute z-[-1] drop-shadow-xl bg-[aliceblue] dark:bg-[#1e293b] dark:text-white  items-center gap-6  flex-col `}>
                         <ul className='flex list-none flex-col items-center gap-6'>
                             {header.Navigation.map((i,index) => <NLink to={i.link} smooth key={index} ><li >{i.label}</li></NLink> )}
                         </ul>

@@ -1,16 +1,19 @@
 import React from 'react'
 import Section from '../generalcomp/Section'
+import { header } from "../../assets/data";
+import { HashLink as NLink } from 'react-router-hash-link';
 
 import animationData from '../../lotties/Skb1oA2iyf.json';
 import { useState } from 'react';
 import { TextGenerateEffect } from '../ui/text-generate-effect';
 import { IconMessage } from '@tabler/icons-react';
-
 const Hero = ({ Coloumn, bgimg, image }) => {
     // let list=Coloumn.social
     const [resultMessage, setResultMessage] = useState('');
     const [Modal, setModal] = useState(false);
     const [Subject, setSubject] = useState("");
+
+    const [isMenuVisible, setIsMenuVisible] = useState(false)
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -93,9 +96,9 @@ const Hero = ({ Coloumn, bgimg, image }) => {
                             {/* <a target="_blank" href={Coloumn.social[3]}><i className="fa-regular fa-envelope"></i></a> */}
 
                         </div>
-                        <a  target="_blank"
-                         href="mailto:tarunrajnaik007@gmail.com?subject=Let's%20Work%20Together&body=I%20want%20to%20work%20on%20a%20project%20with%20you"
-                         class="mt-4 px-4 text-center w-max font-bold h-8 bg-green-400 dark:bg-green-400 text-gray-900 py-1 dark:text-gray-900 rounded" type="submit">Email Me</a>
+                        <a target="_blank"
+                            href="mailto:tarunrajnaik007@gmail.com?subject=Let's%20Work%20Together&body=I%20want%20to%20work%20on%20a%20project%20with%20you"
+                            className="mt-4 px-4 text-center w-max font-bold h-8 bg-green-400 dark:bg-green-400 text-gray-900 py-1 dark:text-gray-900 rounded" type="submit">Email Me</a>
                         {/* <button type="button"
                             onClick={() => setModal(true)}
                             className='
@@ -107,9 +110,65 @@ const Hero = ({ Coloumn, bgimg, image }) => {
                             Hire Me
                         </button> */}
                         <div
-                            onClick={() => setModal(true)}
-                            className='fixed right-4 md:right-10 bottom-10 flex-col z-20 dark:text-slate-400 bg-gray-100 dark:bg-zinc-800 w-14 h-14 rounded-full flex items-center justify-center hover:scale-105 hover:shadow-xl transition duration-200 shadow-lg'>
-                            <IconMessage stroke={2} />
+                            // onClick={() => setModal(true)}
+                            onClick={() => {
+                                setIsMenuVisible(prev => !prev)
+                            }}
+                            className=' delay-150 duration-300 fixed w-2/5 right-4 md:right-10 bottom-10 flex-col z-20 dark:text-slate-400 bg-gray-100 dark:bg-zinc-800  flex items-center justify-center hover:scale-105 hover:shadow-xl transition shadow-lg'
+                        >
+
+
+                            {/* <header className="px-base py-md md:px-md text-brand-white"> */}
+
+
+
+                            <div className=" md:hidden bg-[#808080c2] w-full text-white font-h3  z-20 border border-brand-black bg-brand-white text-brand-black md:bottom-6 md:right-6 max-sm:left-4 ">
+                                <div className="flex h-full flex-col">
+                                    <button
+                                        type="button"
+                                        aria-label="Open Menu"
+                                        className="focus-ring flex h-12 w-full items-center justify-between gap-x-3 border-b border-brand-black px-3 pr-0 transition-colors hover:bg-brand-red"
+                                    >
+                                        <span>Menu</span>
+                                        <span className="flex h-full aspect-square items-center justify-center border-l border-l-brand-black">
+                                            <svg
+                                                width="100%"
+                                                height="100%"
+                                                viewBox="0 0 24 24"
+                                                stroke="currentColor"
+                                                strokeWidth="1.5"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                className={`size-8 duration-300 delay-450 transition  ${isMenuVisible?"rotate-45":"rotate-0"}`}
+                                            >
+                                                <path strokeLinecap="square" d="M12 4.5v15m7.5-7.5h-15" />
+                                            </svg>
+                                        </span>
+                                    </button>
+
+                                   <div className={`-mb-px ${isMenuVisible?"":"h-0"} transition-colors box-border overflow-hidden`}>
+                                            <ul className='flex list-none flex-col '>
+                                                {header.Navigation.map((i, index) => <NLink to={i.link} smooth key={index} ><li
+                                                    className=" transition-colors focus-ring group relative flex h-12 w-full items-center gap-x-3 border-t border-brand-black px-3 hover:bg-brand-red"
+
+                                                >{i.label}</li></NLink>)}
+                                            </ul>
+
+                                        </div>
+                                    
+                                    <a
+                                        href={header.Resume_link}
+                                        target="_self"
+                                        className="focus-ring group relative flex h-12 w-full items-center gap-x-3 border-t border-brand-black px-3 transition-colors hover:bg-brand-red"
+                                        download
+                                    >
+                                        Download CV
+                                    </a>
+                                </div>
+                            </div>
+
+                            {/* </header> */}
+
+                            {/* <IconMessage stroke={2} /> */}
 
                         </div>
                         {/* </a> */}
@@ -120,11 +179,11 @@ const Hero = ({ Coloumn, bgimg, image }) => {
 
                                 <div className="max-w-md mx-auto my-10 bg-white dark:bg-black p-3 rounded-md shadow-sm">
 
-                                    <button onClick={() => setModal(false)} type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="static-modal">
-                                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                    <button onClick={() => setModal(false)} type="button" className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="static-modal">
+                                        <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                                         </svg>
-                                        <span class="sr-only">Close modal</span>
+                                        <span className="sr-only">Close modal</span>
                                     </button>
 
                                     <div className="text-center">
